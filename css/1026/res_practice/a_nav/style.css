@@ -1,0 +1,7 @@
+.res-nav ul {padding: 0; list-style: none; background-color: #333; text-align: center;}
+.res-nav li {display: inline; margin-right: 5px;}
+.res-nav li a {padding: 10px 20px; text-decoration: none; color: #fff;}
+
+@media screen and (max-width: 600px) {
+    .res-nav li {display: block; margin: 0;}
+}

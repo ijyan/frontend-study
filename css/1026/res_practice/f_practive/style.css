@@ -1,0 +1,18 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {background-color: aliceblue;}
+#container {width: 320px; margin: 50px auto;}
+.card {position: relative; width: 300px; height: 500px; margin: 10px; border: 1px solid #0f0f0f; background-color: #fff;}
+.words {position: absolute; left: 10px; top: 300px; text-align: center; width: 200px;}
+
+@media screen and (min-width: 768px) {
+    /* 카드 내부는 세로배치, 전체 container 자식요소 카드는 세로배치 그대로*/
+    #container {width: 570px; margin: 50px auto;}
+    .card {width: 550px; height: 250px;}
+    .words {left: 310px; top: 50px;}
+}
+
+@media screen and (min-width: 1440px) {
+    /* 카드 내부 가로배치 전체 카드 또한 가로배치 */
+    #container {width: 1140px;}
+    .card {float: left;}
+}

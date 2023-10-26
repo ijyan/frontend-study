@@ -1,0 +1,9 @@
+.res-text {font-size: 16px;}
+
+@media screen and (min-width: 600px) {
+    .res-text {font-size: 20px; font-weight: 600;}
+}
+
+@media screen and (min-width: 900px) {
+    .res-text {font-size: 24px; font-weight: 800;}
+}
