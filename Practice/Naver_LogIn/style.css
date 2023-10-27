@@ -1,0 +1,61 @@
+.blind {position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);}
+
+/* **************************************** *
+ * HEADER
+ * **************************************** */
+.header {padding-bottom: 48px;}
+.header .header-inner {position: relative; width: 743px; margin: 0 auto; padding: 180px 0 0; text-align: center;}
+
+.header .logo {display: inline-block; background-image: url('https://ssl.pstatic.net/static/nid/login/m_sp_00_common_978240a6.png'); background-size: 244px 107px; width: 155px; height: 30px; background-position: 0 -51px; background-repeat: no-repeat;}
+.header .lang {position: absolute; top: 20px; right: 0;}
+.header .select {position: relative; font-size: 12px; font-weight: 400; line-height: 18px; width: 100%; min-width: 95px; height: 30px; padding: 4px 10px 6px 8px; color: #333; border: 1px solid #ccc; cursor: pointer; z-index: 1;}
+
+/* **************************************** *
+ * MAIN
+ * **************************************** */
+.main .sign-in-wrapper {width: 460px; margin: 0 auto;}
+.main .panel-wrapper {position: relative; margin-top: -8px;}
+.main .panel-item {border: 1px solid #c6c6c6; border-radius: 6px; background-color: #fff; box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.04); padding: 30px;}
+.main .input-row {position: relative; display: table; table-layout: fixed; width: 100%; height: 100%; border: 1px solid #dadada; padding: 14px 17px 13px;}
+.main .input-row:first-child {border-radius: 6px 6px 0 0; box-shadow: none;}
+.main .input-row:last-child {border-radius: 0 0 6px 6px;}
+.input-row + .input-row {margin: -1px 0 0;}
+.main .icon-cell {display: table-cell; width: 24px; vertical-align: middle;}
+.main .icon-id {display: block; position: absolute; left: 17px; margin-top: -8px; background-image: url('https://ssl.pstatic.net/static/nid/login/m_sp_01_login_008d5216.png'); background-size: 266px 225px; background-position: -93px -203px; background-repeat: no-repeat; width: 16px; height: 16px;}
+.main .icon-password {display: block; position: absolute; left: 17px; margin-top: -8px; background-image: url('https://ssl.pstatic.net/static/nid/login/m_sp_01_login_008d5216.png'); background-size: 266px 225px; background-position: -129px -203px; background-repeat: no-repeat; width: 16px; height: 16px;}
+.main .input-text {position: relative; display: table-cell; padding-right: 30px; width: 100%; font-size: 16px; font-weight: 400; line-height: 19px; letter-spacing: -0.5px; color: #222; z-index: 4;}
+.main .sign-in-keep-wrapper {position: relative; margin: 13px 0 0; padding-right: 20px;}
+.main .keep-check {position: relative; padding-left: 23px;}
+.main .ip-check {position: absolute; top: 0; right: 0; padding-right: 38px;}
+.input-keep {position: absolute; top: 2px; left: 3px; width: 15px; height: 15px;}
+.keep-text {display: inline-block; font-size: 14px; font-weight: 500; cursor: pointer; line-height: 17px; color: #777;}
+.keep-text::before {content: ''; position: absolute; top: 0; left: 0; width: 18px; height: 18px; background-image: url('https://ssl.pstatic.net/static/nid/login/m_sp_01_login_008d5216.png'); background-position: -244px -87px; background-color: #fff; background-repeat: no-repeat; background-size: 266px 225px;}
+.sign-in-button-wrapper {margin: 38px 0 0;}
+.sign-in-button {display: block; width: 100%; padding: 13px 0; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 6px; background-color: #03c75a;}
+.button-text {font-size: 20px; font-weight: 700; line-height: 24px; color: #fff;}
+.find-wrapper {padding: 20px 0 35px; text-align: center;}
+.find-wrapper li {position: relative; display: inline-block;}
+.find-wrapper li + li {padding-left: 28px;}
+.find-wrapper li + li:before {position: absolute; content: ''; top: 3px; left: 12px; width: 1px; height: 12px; border-radius: 0.5px; background-color: #dadada;}
+.find-text {display: inline-block; font-size: 14px; line-height: 17px; color: #888; vertical-align: top;}
+
+.banner-wrapper {width: 460px; height: 147px; margin: 0 auto; text-align: center;}
+.banner-content {width: 100%; height: auto; margin: 0 auto; line-height: 0}
+.banner-img {width: 100%;}
+
+/* **************************************** *
+ * FOOTER
+ * **************************************** */
+.footer {padding: 63px 0 32px;}
+.footer .footer-inner {position: relative; text-align: center;}
+.footer .footer-link li {position: relative; display: inline-block;}
+.text {font-size: 12px; line-height: 15px; letter-spacing: -0.05px; color: #888;}
+.footer-link li + li {position: relative; padding-left: 13px;}
+.footer-link li + li:before {content: ''; position: absolute; top: 4px; left: 4px; width: 1px; height: 12px; background-color: #dadada;}
+.footer-logo {display: inline-block; vertical-align: bottom; background-image: url('https://ssl.pstatic.net/static/nid/login/m_sp_00_common_978240a6.png'); background-size: 244px 107px; width: 70px; height: 15px; background-position: -157px -51px; background-repeat: no-repeat;}
+.footer-copy {margin-top: 8px;}
+.copy {padding: 0 2px; font-weight: 500; color: #000; font-size: 12px; letter-spacing: -0.5px;}
+
+/* 로그인 에러 메시지 출력 */
+.sign-in-error {position: relative; min-height: 34px; margin: 24px 0 -24px; padding-right: 40px;}
+.error-message {display: inline-block; font-size: 12px; line-height: 16px; letter-spacing: -0.5px; color: #ff003e;}
