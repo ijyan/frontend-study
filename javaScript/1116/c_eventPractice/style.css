@@ -1,0 +1,6 @@
+.todo-app {width: 300px; margin: auto;}
+.todo-input {padding: 8px 16px;}
+.btn-add {margin-top: 10px; padding: 8px 16px;}
+.todo-list {list-style-type: none; padding: 0;}
+.todo-item {margin: 10px 0 0;}
+.done {text-decoration: line-through; color: #999;}
