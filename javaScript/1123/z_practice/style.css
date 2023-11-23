@@ -1,0 +1,9 @@
+* {margin: 0; padding: 0; box-sizing: border-box; word-spacing: -0.5px;}
+ul, li {list-style: none; padding: 0; margin: 0;}
+.wrap {margin: 0 auto; text-align: center; width: 404px;}
+.inputField {display: flex; justify-content: center; align-items: center; margin: 30px 0; gap: 4px;}
+input {height: 40px; padding: 8px 12px; width: 300px; border-radius: 8px; border: 1px solid #343A40;}
+.btn-add {height: 40px; display: block; border: 0; background-color: #343A40; border-radius: 8px; color: #fff; cursor: pointer; width: 100px;}
+.item-list {display: flex; flex-direction: column; gap: 8px;}
+.item-list li {cursor: pointer; padding: 12px; transition: color .2s ease; border-radius: 8px; background: #f3f3f3;}
+.item-list li:hover {color: #888}
