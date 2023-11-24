@@ -8,8 +8,9 @@ let items = [];
  */
 const createItem = function () {
   const text = $input.value.trim();
-  if (text.trim()) {
-    items.unshift(text);
+  if (text) {
+    // items.unshift(text);
+    items = [text, ...items];
   }
   $input.value = '';
   renderItems();
@@ -19,10 +20,8 @@ const createItem = function () {
  * 아이템 삭제
  * @param e 이벤트
  */
-const deleteItem = function (e) {
-  const list = [...e.target.parentElement.children];
-  const idx = list.indexOf(e.target);
-  items = items.filter((v, i) => i !== idx);
+const deleteItem = function (idx) {
+  items = items.filter((_, i) => i !== idx);
   renderItems();
 };
 
@@ -35,13 +34,12 @@ const renderItems = function () {
   items.forEach((item, idx) => {
     const li = document.createElement('li');
     li.textContent = item;
-    li.addEventListener('click', deleteItem);
+    li.onclick = () => deleteItem(idx);
     $itemList.appendChild(li);
   });
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-  $btnAdd.addEventListener('click', createItem);
   $input.addEventListener('keypress', (e) => {
     if (e.keyCode === 13) {
       createItem();
