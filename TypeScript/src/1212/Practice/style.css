@@ -1,0 +1,5 @@
+.photo-container {display: grid;grid-template-columns: repeat(2, 1fr);gap: 10px;padding: 10px;}
+.photo-item {border: 1px solid #ddd;padding: 20px;text-align: center;}
+.photo-item img {max-width: 100%;height: auto;}
+.btn-prev, .btn-next {height: 33px;padding: 0 12px;margin: 0 5px;border: none;background-color: #0c243b;border-radius: 8px;cursor: pointer;color: #fff;transition: background-color 0.2s ease 0s;}
+.btn-prev:hover, .btn-next:hover {background: #1d354c;}
