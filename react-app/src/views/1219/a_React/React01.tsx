@@ -45,11 +45,7 @@
 import React from 'react';
 
 function React01() {
-  return (
-    <div>
-      React
-    </div>
-  );
+  return <div>React</div>;
 }
 
 export default React01;

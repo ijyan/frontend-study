@@ -20,8 +20,12 @@ function React02() {
   return (
     <div>
       <h3>Count: {count}</h3>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
+      <button onClick={increment} type="button">
+        Increment
+      </button>
+      <button onClick={decrement} type="button">
+        Decrement
+      </button>
     </div>
   );
 }

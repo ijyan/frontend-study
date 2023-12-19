@@ -30,3 +30,4 @@ yarn-error.log*
 /.idea/prettier.xml
 /.idea/react-app.iml
 /.idea/vcs.xml
+/.idea/git_toolbox_prj.xml

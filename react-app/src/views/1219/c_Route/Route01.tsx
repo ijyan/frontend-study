@@ -5,7 +5,7 @@
  *   : 사용자가 요청한 URL에 따라 해당 URL에 맞는 페이지를 보여주는 것
  *
  * ? 설치
- * > npm instll react-router-dom
+ * > npm install react-router-dom
  *
  * ? 프로젝트에 라우터 적용
  *   : 프로젝트 최상단인 `index.tsx`에서 `BrowserRouter`를 적용하여 자식 컴포넌트들이 라우팅 기능을 사용할 수 있도록 작성
@@ -24,7 +24,11 @@
 import React from 'react';
 
 function Route01() {
-  return <div>Route01</div>;
+  return (
+    <div>
+      <h1>Router01</h1>
+    </div>
+  );
 }
 
 export default Route01;
