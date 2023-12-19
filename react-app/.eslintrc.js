@@ -34,5 +34,7 @@ module.exports = {
       },
     ],
     'react/react-in-jsx-scope': 'off',
+    'global-require': 0,
   },
+  ignorePatterns: ['.eslintrc.js'],
 };
