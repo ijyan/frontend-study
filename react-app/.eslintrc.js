@@ -9,6 +9,7 @@ module.exports = {
     'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -19,7 +20,7 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json',
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -35,6 +36,13 @@ module.exports = {
     ],
     'react/react-in-jsx-scope': 'off',
     'global-require': 0,
+    'react/jsx-no-useless-fragment': [2, { allowExpressions: true }], // Fragment
+    'react/function-component-definition': [
+      // 함수형 컴포넌트에 대한 함수 유형 지정
+      // https://velog.io/@nemo/Function-component-is-not-a-function-declaration
+      2,
+      { namedComponents: ['arrow-function', 'function-declaration'] },
+    ],
   },
   ignorePatterns: ['.eslintrc.js'],
 };
