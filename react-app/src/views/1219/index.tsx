@@ -1,7 +1,7 @@
 import React01 from './a_React/React01';
 import React02 from './a_React/React02';
-import Component01 from './b_Component/Component01';
-import Route01 from './c_Route/Route01';
+import Component01 from './c_Component/Component01';
+import Route01 from './b_Route/Route01';
 
 function Index() {
   return (
