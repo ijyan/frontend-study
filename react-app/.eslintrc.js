@@ -7,6 +7,7 @@ module.exports = {
     'airbnb',
     'airbnb-typescript',
     'airbnb/hooks',
+    'eslint-config-prettier',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'prettier',
@@ -26,10 +27,10 @@ module.exports = {
       'error',
       {
         endOfLine: 'auto',
-        useTabs: false,
-        quotes: [1, 'single'],
+        jsxSingleQuote: false,
       },
     ],
+    quotes: [2, 'single', { avoidEscape: true }],
     'react/jsx-filename-extension': [
       'warn',
       {
