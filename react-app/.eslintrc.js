@@ -10,7 +10,6 @@ module.exports = {
     'eslint-config-prettier',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
-    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -27,15 +26,13 @@ module.exports = {
       'error',
       {
         endOfLine: 'auto',
+        singleQuote: true,
         jsxSingleQuote: false,
       },
     ],
-    quotes: [2, 'single', { avoidEscape: true }],
     'react/jsx-filename-extension': [
-      'warn',
-      {
-        extensions: ['.tsx'],
-      },
+      2,
+      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     ],
     'react/react-in-jsx-scope': 'off',
     'global-require': 0,

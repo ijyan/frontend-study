@@ -31,3 +31,4 @@ yarn-error.log*
 /.idea/react-app.iml
 /.idea/vcs.xml
 /.idea/git_toolbox_prj.xml
+/.idea/jsLibraryMappings.xml
