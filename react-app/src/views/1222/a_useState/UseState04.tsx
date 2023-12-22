@@ -29,7 +29,6 @@ function UseState04() {
         Count
       </button>
 
-      <input type="text" />
       {/* 문자열: 사용자 이름 입력 필드 */}
       <input
         type="text"
