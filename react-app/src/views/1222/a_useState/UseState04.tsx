@@ -29,6 +29,7 @@ function UseState04() {
         Count
       </button>
 
+      <input type="text" />
       {/* 문자열: 사용자 이름 입력 필드 */}
       <input
         type="text"
@@ -40,6 +41,7 @@ function UseState04() {
       <button onClick={() => setIsVisiable(!isVisiable)} type="button">
         Toggle Visibility
       </button>
+      <button type="button">asdlkj</button>
 
       {/* 사용자 정보 수정 입력 필드 */}
       <input
@@ -51,7 +53,6 @@ function UseState04() {
       />
 
       {/* 아이템 추가 버튼 */}
-
       <button onClick={addItem} type="button">
         Add Item
       </button>
