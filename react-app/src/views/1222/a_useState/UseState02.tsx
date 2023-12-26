@@ -13,20 +13,24 @@ import React, { useState } from 'react';
 
 function UseState02() {
   const [inputValue, setInputValue] = useState<string>('');
+  // 요소의 이벤트를 전달
+  // 이벤트 객체
+  // : React에서 이벤트를 처리할 때, 이벤트 객체가 핸들러 함수에 전달
+  // : input의 onChange를 사용하면 이벤트 객체 e를 파라미터로 받아올 수 있다.
 
-  // React에서 이벤트를 처리할 때, 이벤트 객체가 핸들러 함수에 전달
-  // input의 onChange를 사용하면 이벤트 객체 e를 파라미터로 받아올 수 있다.
   // e.target.value
   // ? e.target
-  // : 이벤트가 발생한 DOM요소를 가리킴.
+  // : 이벤트가 발생한 DOM 요소를 가리킴.
   // ? value 속성
   // : 해당 요소의 현재 값에 접근하는데 사용
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     // 사용자의 입력값을 상태로 설정
     setInputValue(e.target.value);
   };
 
   const handleClick = () => {
+    // 상태 설정 함수를 사용하여 inputValue를 초기화
     setInputValue('');
   };
 
@@ -39,9 +43,15 @@ function UseState02() {
       : 사용자가 입력 필드에 타이핑할 때 마다 발생하는 이벤트
       : input, textarea, select 등의 HTML 요소에 적용
        */}
+      <h5 style={{ backgroundColor: 'black', color: 'white' }}>
+        useState를 사용한 이벤트 처리
+      </h5>
       <input type="text" onChange={handleInputChange} />
       <p>Input Value: {inputValue}</p>
 
+      {/*
+        Reset 버튼 클릭 시 input태그 안의 내용이 초기화
+      */}
       <button type="button" onClick={handleClick}>
         Reset
       </button>

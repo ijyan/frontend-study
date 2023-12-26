@@ -35,7 +35,8 @@ function UseState01() {
     console.log(count);
 
     // ? 함수형 업데이트
-    // setCount(count + 1);
+    // 이전 상태 값을 기반으로 상태를 업데이트 할 때는 함수형 업데이트를 사용하는 것을 권장
+    // : 상태 업데이트 함수에 '최신 상태 값'을 자동으로 전달
     setCount((prevCount) => prevCount + 1);
   };
 

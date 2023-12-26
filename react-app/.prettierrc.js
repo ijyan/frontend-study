@@ -5,4 +5,5 @@ module.exports = {
   singleQuote: true,
   tabWidth: 2,
   jsxSingleQuote: false,
+  endOfLine: 'lf',
 };
