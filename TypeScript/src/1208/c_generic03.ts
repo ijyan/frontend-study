@@ -20,7 +20,7 @@
   // : 타입스크립트에 내장된 일련의 제네릭 타입
   // : 기존 타입을 변환하거나 조작하는데 사용
 
-  // ? Pertial: 모든 속성을 선택적으로 만들어줌.
+  // ? Partial: 모든 속성을 선택적으로 만들어줌.
   interface User {
     name: string;
     age: number;
@@ -31,13 +31,13 @@
     2: { name: 'ljg', age: 34 },
   };
 
-  function updateUser(id: number, chages: Partial<User>) {
+  function updateUser(id: number, changes: Partial<User>) {
     // 업데이트 로직
     const user = users[id];
     if (!user) {
       console.log(`User with id ${id} not found`);
     }
-    users[id] = { ...user, ...chages };
+    users[id] = { ...user, ...changes };
   }
   updateUser(2, { name: 'hgd' });
   console.log(users);
