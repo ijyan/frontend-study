@@ -46,6 +46,8 @@ module.exports = {
     // @typescript-eslint/no-unused-vars
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['warn'],
+    // 테스트 또는 개발환경을 구성하는 파일에서는 devDependency 사용을 허용
+    'import/no-extraneous-dependencies': 0,
   },
   ignorePatterns: ['.eslintrc.js'],
 };
