@@ -43,6 +43,9 @@ module.exports = {
       2,
       { namedComponents: ['arrow-function', 'function-declaration'] },
     ],
+    // @typescript-eslint/no-unused-vars
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['warn'],
   },
   ignorePatterns: ['.eslintrc.js'],
 };
