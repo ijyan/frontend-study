@@ -19,6 +19,7 @@ import Index0102 from './views/0102';
 import Index0104 from './views/0104';
 import Index0105 from './views/0105';
 import Index0109 from './views/0109';
+import Index0111 from './views/0111';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
       { path: '/0104', element: <Index0104 /> },
       { path: '/0105', element: <Index0105 /> },
       { path: '/0109', element: <Index0109 /> },
+      { path: '/0111', element: <Index0111 /> },
     ],
   },
 ]);
