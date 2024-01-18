@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
-import About from "./pages/About";
-import Home from "./pages/Home";
-import BookList from "./pages/Booklist";
-import BookDetail from "./pages/BookDetail";
+import About from "./pages/about";
+import Home from "./pages/home";
+import BookList from "./pages/booklist";
+import BookDetail from "./pages/bookDetail";
+import Login from './pages/cookie/Login';
 
 //! React-Router-Dom
 // : React 앱에서 클라이언트 사이드 라우팅을 구현하기 위한 라이브러리
@@ -88,6 +89,9 @@ function App() {
           <li>
             <Link to="/book">Book</Link>
           </li>
+          <li>
+            <Link to="/book">Login</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -95,6 +99,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/book" element={<BookList />} />
         <Route path="/book/:bookId" element={<BookDetail />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       {/* a화면 - 로그인, 회원가입 */}
 

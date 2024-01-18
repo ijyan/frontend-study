@@ -12,5 +12,11 @@
       "author": "Author",
       "description": "Book 2 description"
     }
+  ],
+  "users": [
+    {
+      "userId": "abc123",
+      "password": "abc123"
+    }
   ]
 }
