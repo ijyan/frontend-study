@@ -1,12 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {
-  BrowserRouter,
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom';
-import { CssBaseline } from '@mui/material';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Index1219 from './views/1219';
@@ -20,6 +16,8 @@ import Index0104 from './views/0104';
 import Index0105 from './views/0105';
 import Index0109 from './views/0109';
 import Index0111 from './views/0111';
+import IndexMui from './views/mui';
+import { theme } from './views/mui/basic';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +35,7 @@ const router = createBrowserRouter([
       { path: '/0105', element: <Index0105 /> },
       { path: '/0109', element: <Index0109 /> },
       { path: '/0111', element: <Index0111 /> },
+      { path: '/mui', element: <IndexMui /> },
     ],
   },
 ]);
@@ -46,7 +45,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CssBaseline />
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>,
 );
 
